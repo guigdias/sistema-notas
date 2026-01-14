@@ -1,6 +1,5 @@
 ﻿// URL base da API backend
-const API_URL = 'https://localhost:7249/api/aluno';
-
+const API_URL = '/api/aluno'
 
 // POST - cadastrar aluno
 export async function cadastrarAluno(aluno) {

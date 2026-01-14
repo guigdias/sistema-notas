@@ -20,18 +20,17 @@ namespace SistemaNotas.Controllers
         [HttpGet("relatorio")] // Define que esse método responde a GET na rota /relatorio
         public IActionResult Relatorio()
         {
-            var resultado = _alunoService.GerarRelatorio(); // Gera o relatório dos alunos
-            return Ok(resultado); // Retorna 200 OK com o objeto JSON
+            var resultado = _alunoService.GerarRelatorio();
+            return Ok(resultado);
         }
 
 
         // POST /api/aluno/alunos
-        [HttpPost]
-        [Route("alunos")] // Define rota POST /api/aluno/alunos
+        [HttpPost("alunos")]
         public IActionResult InsertAluno([FromBody] Aluno aluno)
         {
-            _alunoService.InsertAluno(aluno); // Insere o aluno no serviço
-            return new JsonResult(new { mensagem = "Aluno cadastrado com sucesso!" })   // Retorna 200 OK com uma mensagem 
+            _alunoService.InsertAluno(aluno);
+            return new JsonResult(new { mensagem = "Aluno cadastrado com sucesso!" })
             {
                 ContentType = "application/json; charset=utf-8"
             };

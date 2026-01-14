@@ -7,12 +7,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\assets\index-Bu590cIk.css" />
+    <Content Remove="wwwroot\assets\index-ChaJq6vW.js" />
+    <Content Remove="wwwroot\assets\index-N6oeA_ue.js" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\vite.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="README\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\index-Bu590cIk.css" />
+    <None Include="wwwroot\assets\index-ChaJq6vW.js" />
+    <None Include="wwwroot\assets\index-N6oeA_ue.js" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\vite.svg" />
   </ItemGroup>
 
 </Project>

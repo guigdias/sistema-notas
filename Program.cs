@@ -49,6 +49,10 @@ app.UseCors("AllowFrontend");
 // Autorização (se houver)
 app.UseAuthorization();
 
+// ASP NET servindo o index.html
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 // Mapear controllers
 app.MapControllers();
 
