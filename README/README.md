@@ -1,24 +1,30 @@
-﻿# Sistema de Notas - Teste Estágio DTI digital
+# Sistema de Notas – Teste Estágio DTI Digital
 
-Sistema web para cadastro de alunos, cálculo de médias, relatórios de desempenho e frequência. Desenvolvido com ASP.NET Core no backend e React no frontend.
+Sistema web para cadastro de alunos, cálculo de médias, relatórios de desempenho e controle de frequência.  
+Desenvolvido com **ASP.NET Core Web API** no backend e **React** no frontend, com integração para execução simplificada.
 
-#Autor - Guilherme Guimarães Dias Coelho
+## Autor
+**Guilherme Guimarães Dias Coelho**
 
-# Tecnologias utilizadas
+## Tecnologias Utilizadas
 
-- Backend:
-  - .NET 10 / ASP.NET Core Web API
-  - C# com Controllers, Services e DTOs
-  - Swagger / OpenAPI para documentação
-  - CORS configurado para permitir requests do frontend
+### Backend
+- .NET 10  
+- ASP.NET Core Web API  
+- C# (Controllers, Services e DTOs)  
+- Swagger / OpenAPI para documentação  
+- CORS configurado para consumo do frontend  
 
-- Frontend:
-  - React 18 (create-react-app)
-  - JSX + Hooks (`useState`, `useEffect`)
-  - Fetch API para consumir endpoints do backend
-- Outras:
-  - Visual Studio Community 2022
-  - Navegador com suporte a HTTPS local (localhost)
+### Frontend
+- React 18  
+- JSX + Hooks (`useState`, `useEffect`)  
+- Fetch API para consumo dos endpoints  
+- Build integrado ao backend via `wwwroot`
+
+### Outras
+- Visual Studio Community 2022  
+- IIS Express  
+- Navegador com suporte a HTTPS/HTTP local  
 
 # Estrutura do projeto
 
@@ -38,58 +44,58 @@ SistemaNotas:
     - App.jsx
 - Models:
 	- Aluno.cs
+- wwwroot
+     - index.html
+     - assets/ (build do React)
 - README:
 	- README.md
 - Services:
 	- AlunoService.cs
 - Program.cs
 
-# Passo a passo para rodar o projeto
 
-# 1- Backend:
+> O frontend React foi **buildado e integrado ao backend**, sendo servido diretamente pelo ASP.NET Core.
 
-- 1- Abra o projeto no Visual Studio ou VS Code.
-- 2- Certifique-se de que a porta configurada no `launchSettings.json` ou no log do console é **https://localhost:7249**.
-- 3- Execute o backend (`F5` no Visual Studio ou `dotnet run` no terminal).
-- 4- Confirme que o Swagger está acessível em `https://localhost:7249/swagger` e que as rotas:
-   - `POST /api/aluno/alunos`
-   - `GET /api/aluno/relatorio`
-   estão funcionando.
+## Como Executar o Projeto
 
-# 2- Frontend:
+## Execução Simplificada
 
-- 1- Abra o terminal na pasta do frontend (React).
-- 2- Instale as dependências:
-	- bash
-	- npm install
+1. Abra o projeto no **Visual Studio**.
+2. Selecione **IIS Express**.
+3. Pressione **F5** para executar.
+4. A aplicação será aberta automaticamente no navegador.
 
-# 3- Execute o FrontEnd:
+## Verificação da API (Opcional)
 
-- Certifique-se de estar na pasta Frontend, digite no terminal:
-	- npm start ou npm run dev
+- Swagger disponível em:  
+  `http://localhost:7249/swagger`
 
-# 4- O React será aberto em http://localhost:3000 (padrão do create-react-app).
+### Endpoints:
+- `POST /api/aluno/alunos`
+- `GET /api/aluno/relatorio`
 
-# 5- Confira se o api.js aponta para a URL correta do backend:
+## Como Testar
 
-const API_URL = 'https://localhost:7249/api/aluno';
+1. Abra a aplicação no navegador.
+2. Cadastre alunos informando:
+   - Nome
+   - 5 notas
+   - Frequência (%)
+3. O relatório será atualizado automaticamente exibindo:
+   - Médias por aluno
+   - Média por disciplina
+   - Alunos acima da média geral
+   - Alunos com frequência abaixo de 75%
 
-# 6- Teste o projeto:
+## Funcionalidades
 
-- Cadastre um aluno no formulário, para que o relatório atualize.
-- Cadastre pelo menos 2 alunos, para que os cálculos de acima da média sejam expostos.
+### Cadastro de Alunos
+- Nome
+- Cinco notas (0 a 10)
+- Frequência (0% a 100%)
 
-# Funcionalidades:
-
-- Cadastro de alunos com:
-	- Nome
-	- 5 notas
-	- Frequência (%)
-
-- Cálculo automático:
-	- Média de cada aluno
-	- Média por disciplina
-	- Alunos acima da média geral
-	- Alunos com frequência abaixo de 75%
-
-- Relatório exibido no frontend em tempo real.
+### Relatórios Automáticos
+- Média individual do aluno
+- Média da turma por disciplina
+- Alunos acima da média geral
+- Alunos com frequência inferior a 75%
