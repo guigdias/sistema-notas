@@ -28,40 +28,40 @@ SistemaNotas:
 - DTOS:
 	- AlunoDTO.cs
 	- ResultadoDTO.cs
--Frontend:
-	-src:
-	   -Components:
-			- AlunoForm.jsx
-	        - Relatorio.jsx
-		-Services:
-	        - api.js
-        App.jsx
--Models:
+- Frontend:
+	- src:
+      - Components:
+		- AlunoForm.jsx
+		- Relatorio.jsx
+	- Services:
+		- api.js
+    - App.jsx
+- Models:
 	- Aluno.cs
--README:
+- README:
 	- README.md
--Services:
+- Services:
 	- AlunoService.cs
--Program.cs
+- Program.cs
 
 # Passo a passo para rodar o projeto
 
 # 1- Backend:
 
-1- Abra o projeto no Visual Studio ou VS Code.
-2- Certifique-se de que a porta configurada no `launchSettings.json` ou no log do console é **https://localhost:7249**.
-3- Execute o backend (`F5` no Visual Studio ou `dotnet run` no terminal).
-4- Confirme que o Swagger está acessível em `https://localhost:7249/swagger` e que as rotas:
+- 1- Abra o projeto no Visual Studio ou VS Code.
+- 2- Certifique-se de que a porta configurada no `launchSettings.json` ou no log do console é **https://localhost:7249**.
+- 3- Execute o backend (`F5` no Visual Studio ou `dotnet run` no terminal).
+- 4- Confirme que o Swagger está acessível em `https://localhost:7249/swagger` e que as rotas:
    - `POST /api/aluno/alunos`
    - `GET /api/aluno/relatorio`
    estão funcionando.
 
 # 2- Frontend:
 
-1- Abra o terminal na pasta do frontend (React).
-2- Instale as dependências:
-- bash
-- npm install
+- 1- Abra o terminal na pasta do frontend (React).
+- 2- Instale as dependências:
+	- bash
+	- npm install
 
 # 3- Execute o FrontEnd:
 
