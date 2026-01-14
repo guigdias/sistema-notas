@@ -11,21 +11,16 @@ Desenvolvido com **ASP.NET Core Web API** no backend e **React** no frontend, co
 ### Backend
 - .NET 10  
 - ASP.NET Core Web API  
-- C# (Controllers, Services e DTOs)  
-- Swagger / OpenAPI para documentação  
-- CORS configurado para consumo do frontend  
+- C#  
+- Swagger / OpenAPI  
+- CORS
 
 ### Frontend
 - React 18  
-- JSX + Hooks (`useState`, `useEffect`)  
-- Fetch API para consumo dos endpoints  
+- JSX + Hooks 
+- Fetch API  
 - Build integrado ao backend via `wwwroot`
-
-### Outras
-- Visual Studio Community 2022  
-- IIS Express  
-- Navegador com suporte a HTTPS/HTTP local  
-
+ 
 # Estrutura do projeto
 
 SistemaNotas:
