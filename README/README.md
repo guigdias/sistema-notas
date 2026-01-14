@@ -2,6 +2,8 @@
 
 Sistema web para cadastro de alunos, cálculo de médias, relatórios de desempenho e frequência. Desenvolvido com ASP.NET Core no backend e React no frontend.
 
+#Autor - Guilherme Guimarães Dias Coelho
+
 # Tecnologias utilizadas
 
 - Backend:
