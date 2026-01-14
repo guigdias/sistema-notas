@@ -9,7 +9,7 @@ Desenvolvido com **ASP.NET Core Web API** no backend e **React** no frontend, co
 ## Tecnologias Utilizadas
 
 ### Backend
-- .NET 10  
+- .NET 8  
 - ASP.NET Core Web API  
 - C#  
 - Swagger / OpenAPI  
@@ -20,6 +20,25 @@ Desenvolvido com **ASP.NET Core Web API** no backend e **React** no frontend, co
 - JSX + Hooks 
 - Fetch API  
 - Build integrado ao backend via `wwwroot`
+
+- Pré-requisitos para Executar o Projeto
+
+## Antes de executar o projeto, certifique-se de que o ambiente possui os seguintes requisitos:
+
+# Requisitos Obrigatórios
+
+- .NET SDK 8.0 ou superior
+- Visual Studio 2022 (ou superior) com os workloads:
+	- ASP.NET e Desenvolvimento web
+
+- Navegador Web:
+Google Chrome, Edge ou Firefox
+
+# Compatibilidade:
+
+- .NET 7
+- .NET 8 (LTS – recomendado)
+- .NET 9 / 10
  
 # Estrutura do projeto
 
