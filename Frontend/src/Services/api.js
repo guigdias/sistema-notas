@@ -11,7 +11,7 @@ export async function cadastrarAluno(aluno) {
         body: JSON.stringify(aluno) // Converte o objeto aluno em JSON
     });
 
-    // Se a resposta não for OK (200..299), lança um erro
+    // Se a resposta não for OK, lança um erro
     if (!response.ok) {
         throw new Error('Erro ao cadastrar aluno');
     }

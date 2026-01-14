@@ -1,19 +1,18 @@
-﻿using SistemaNotas.Models;   // Importa o modelo Aluno
-using SistemaNotas.DTOS;     // Importa o DTO ResultadosDTO
+﻿using SistemaNotas.Models;
+using SistemaNotas.DTOS;    
 
 namespace SistemaNotas.Services
 {
     public class AlunoService
     {
-        // Lista de alunos e contador de ID
         private static List<Aluno> alunos = new(); // Lista estática para armazenar os alunos
         private static int contID = 1; // Contador para gerar IDs únicos
 
         // Método para cadastrar aluno
         public void InsertAluno(Aluno aluno)
         {
-            aluno.Id = contID++;  // Atribui um ID único e incrementa o contador
-            alunos.Add(aluno);    // Adiciona o aluno à lista
+            aluno.Id = contID++;  
+            alunos.Add(aluno);   
         }
 
         // Método para gerar relatório

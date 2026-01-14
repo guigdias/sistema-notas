@@ -26,7 +26,7 @@ function AlunoForm({ onCadastro }) {
 
         try {
             const result = await cadastrarAluno(aluno);
-            console.log(result.mensagem); // Exibe "Aluno cadastrado com sucesso!"
+            console.log(result.mensagem);
             onCadastro(); // Atualiza relatório
         } catch (error) {
             console.error(error);

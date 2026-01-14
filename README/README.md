@@ -1,4 +1,4 @@
-# Sistema de Notas – Teste Estágio DTI Digital
+﻿# Sistema de Notas – Teste Estágio DTI Digital
 
 Sistema web para cadastro de alunos, cálculo de médias, relatórios de desempenho e controle de frequência.  
 Desenvolvido com **ASP.NET Core Web API** no backend e **React** no frontend, com integração para execução simplificada.
