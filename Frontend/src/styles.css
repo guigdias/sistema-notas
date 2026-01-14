@@ -1,0 +1,99 @@
+﻿/* Reset simples */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Corpo da aplicação */
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Container principal */
+.app-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Formulário */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+    input:focus {
+        outline: none;
+        border-color: #4a90e2;
+    }
+
+/* Botão */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #357ab8;
+    }
+
+/* Listas */
+ul {
+    list-style: none;
+    margin-top: 5px;
+}
+
+li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Destaques */
+.alerta {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.destaque {
+    color: #27ae60;
+    font-weight: bold;
+}
