@@ -79,10 +79,19 @@ SistemaNotas:
 3. Pressione **F5** para executar.
 4. A aplicação será aberta automaticamente no navegador.
 
-## Verificação da API (Opcional)
+### Acesso à API e Swagger
 
-- Swagger disponível em:  
-  `http://localhost:7249/swagger`
+Ao executar o projeto via **IIS Express** ou `dotnet run`, o Visual Studio abrirá
+automaticamente o navegador com a URL correta, por exemplo:
+
+https://localhost:44355
+
+O Swagger estará disponível em:
+
+https://localhost:44355/swagger
+
+> A porta pode variar de acordo com o ambiente. Utilize sempre a porta
+> exibida no navegador ou no console ao iniciar a aplicação.
 
 ### Endpoints:
 - `POST /api/aluno/alunos`
